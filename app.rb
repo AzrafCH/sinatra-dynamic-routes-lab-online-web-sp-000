@@ -5,8 +5,7 @@ class App < Sinatra::Base
 
   get 'reversename/:name' do
     #that accepts a name and renders the name backwards.
-    @reverse_name = params[:name].reverse
-    "#{@reverse_name}"
+    params[:name].reverse
   end
 
   get 'square/:number' do
