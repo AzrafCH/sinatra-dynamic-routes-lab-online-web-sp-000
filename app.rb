@@ -11,10 +11,13 @@ class App < Sinatra::Base
 
   get 'square/:number' do
     #that accepts a number and returns the square of that number.
+    @square = params[:number].to_i ^ 2
+    "#{@square}"
   end
 
   get '/say/:number/:phrase' do
     #accepts a number and a phrase and returns that phrase in a string the number of times given.
+
 
   end
 
