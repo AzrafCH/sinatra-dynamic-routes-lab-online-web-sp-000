@@ -11,7 +11,7 @@ class App < Sinatra::Base
 
   get 'square/:number' do
     #that accepts a number and returns the square of that number.
-    @square = params[:number].to_i ^ 2
+    @square = params[:number].to_i * params[:number].to_i
     "#{@square}"
   end
 
