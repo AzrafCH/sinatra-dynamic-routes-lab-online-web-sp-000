@@ -4,7 +4,7 @@ class App < Sinatra::Base
   # Write your code here!
 
   get 'reversename/:name' do
-
+    #that accepts a name and renders the name backwards.
   end
 
   get 'square/:number' do
@@ -16,6 +16,13 @@ class App < Sinatra::Base
 
   end
 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    #that accepts five words and returns a string containing all five words
+  end
+
+  get '/:operation/:number1/:number2' do
+    # that accepts an operation (add, subtract, multiply or divide) and performs the operation on the two numbers provided. For example, going to /add/1/2
+  end
 
 
 end
